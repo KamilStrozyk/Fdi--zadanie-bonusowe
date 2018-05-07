@@ -78,14 +78,14 @@ public class MainParticleScript : MonoBehaviour {
         return y;
     }
     //obliczanie ln z "reszty" iloczynu za pomocą funkcji wbudowanych powodowało błędy. 
-    //Rozwiazanie: ln(10) w przybliżeniu to  2.30258509299- rozkładam ln(10^x) na ln(10)+ln(10)+...+ln(10) i obliczam
+    //Rozwiazanie:  rozkładam ln(10^x) na ln(10)+ln(10)+...+ln(10) i obliczam
     float ln(int x)
     {
         float wynik = 1;
         while(x>0)
         {
 
-            wynik += 2.30258509299f;
+            wynik += Mathf.Log(10);
     
                 x--;
         }

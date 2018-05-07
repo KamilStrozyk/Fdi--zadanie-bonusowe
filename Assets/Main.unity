@@ -951,7 +951,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1338004722}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
+  m_MaxValue: 10
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
@@ -1331,6 +1331,8 @@ MonoBehaviour:
   _prawddyn: 0
   entropia: {fileID: 897642130}
   _entropia: 0
+  isStart: 0
+  mnoznik: 0
 --- !u!1 &1142429070
 GameObject:
   m_ObjectHideFlags: 0

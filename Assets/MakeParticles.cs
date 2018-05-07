@@ -65,9 +65,10 @@ if(i%2==0)                Mother = Fc[(N/2-1+ count / 2)%Fc.Count];
                 P.transform.SetParent(Part);
                 //Jeśli tryb to Pozycja- do ParticleScript przekazujemy GameObjcet Poz i współrzędne poz
                 P.GetComponent<ParticleScript>().Pos = p0;
-                P.GetComponent<ParticleScript>().pos = Mother.GetComponent<CellScript>().pos;
-    
-        }else
+                P.GetComponent<ParticleScript>().posF[0] =(float) Mother.GetComponent<CellScript>().pos[1];
+                P.GetComponent<ParticleScript>().posF[1] = (float)Mother.GetComponent<CellScript>().pos[0];
+            }
+            else
             {
 
                 //Jeśli tryb to ped- do ParticleScript przekazujemy GameObjcet Ped i współrzędne ped
